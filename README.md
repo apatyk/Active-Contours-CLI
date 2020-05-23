@@ -35,4 +35,9 @@ This program only works with grayscale PPM images.
 
 ## Test Case
 
+| input | file |
+|-----------|---------------|
+| input image | hawk.ppm |
+| initial contour point locations | hawk_init.txt |
 
+This test case refines a contour around the hawk in the image.
