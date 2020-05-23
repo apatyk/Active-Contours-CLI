@@ -6,7 +6,7 @@ This project utilizes an active contours algorithm with a command line interface
 
 For the first of the internal energy terms, the curvature between the points in the contour was calculated. This was done using the finite, discrete difference below. This internal energy term was used to ensure smoothness among the points in the active contour.
 
-<img src="https://render.apatyk.com/render/math?math=E_{internal, 1} = {(x_{i-1} - 2x_i + x_{i+1})}^2 + {(y_{i-1} - 2y_i + y_{i+1})}^2">
+<img src="https://render.githubusercontent.com/render/math?math=E_{internal, 1} = {(x_{i-1} - 2x_i + x_{i+1})}^2 + {(y_{i-1} - 2y_i + y_{i+1})}^2">
 
 For the second of the two internal energy terms, the distance from the centroid of the region enclosed by the contour was calculated. All row and column locations for the contour were averaged together on each iteration to calculate the center. The energy term that tended towards this centroid was calculated with the following:
 
