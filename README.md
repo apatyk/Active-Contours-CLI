@@ -10,16 +10,16 @@ For the first of the internal energy terms, the curvature between the points in 
 
 For the second of the two internal energy terms, the distance from the centroid of the region enclosed by the contour was calculated. All row and column locations for the contour were averaged together on each iteration to calculate the center. The energy term that tended towards this centroid was calculated with the following:
 
-Einternal,2 = (xi − xcentroid)2 + (yi − ycentroid)2 
+<img src="https://render.githubusercontent.com/render/math?math=E_{internal, 2} = {(x_i - x_{centroid})}^2 + {(y_i - y_{centroid})}^2">
 
 Lastly, the external energy term used the negative of the image gradient:
 
-Eexternal = −||∇I(xi, yi)||
+<img src="https://render.githubusercontent.com/render/math?math=E_{external} = -||\nabla I(x_i, y_i)||">
 
 From there, the total energy was calculated by summing the 2 internal energy terms and 1
 external energy term.
 
-Etotal = Einternal,1 + Einternal,2 + Eexternal
+<img src="https://render.githubusercontent.com/render/math?math=E_{total} = E_{internal, 1} + E_{internal, 2} + E_{external}">
 
 The minimum total energy was found for each point on the contour for each iteration. Then, the contour was moved to that point after all of the other points had been calculated for that iteration.
 
